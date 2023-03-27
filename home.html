@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="text-center mb-3">{% block title %} Link shrinking ghost welcomes you! {% endblock %}</h1>
+    <h1>I will shrink your URL not smth else!!! *wink wink*</h1>
+    <form action="#", method="POST">
+        <label for="url">give me your Url I will vomit back a shorter one</label>
+    
+        <input type="url" name="nm" id="url"
+           placeholder="Enter an https:// URL:"
+           pattern="https://.*" size="50"
+           required>
+        <br>
+        <input type="submit" value="submit" class="btn btn-primary">
+    </form>
+{% endblock %}
